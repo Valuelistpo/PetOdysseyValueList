@@ -1,52 +1,58 @@
-/* Algemene styling */
 body {
   margin: 0;
   padding: 20px;
   background-color: #000;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
-/* Container grid */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
 /* Pet card styling */
 .pet-card {
   background-color: #111;
-  border: 2px solid #2e003e;
-  border-radius: 12px;
-  padding: 15px;
+  border: 2px solid #3b0066;
+  border-radius: 14px;
+  padding: 16px;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 0 0 transparent;
 }
 
 .pet-card:hover {
-  background-color: #1a0026;
-  box-shadow: 0 0 15px 5px rgba(155, 0, 255, 0.4);
-  transform: translateY(-4px);
+  background-color: #1f0033;
+  box-shadow: 0 0 20px 6px rgba(180, 0, 255, 0.35);
+  transform: translateY(-5px);
 }
 
-/* Pet afbeelding */
 .pet-img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
 
-/* Value en stats styling */
+/* Naam in kleur en vetgedrukt */
+.pet-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d16aff;
+  margin-bottom: 8px;
+}
+
+/* Waarde in goudkleur */
 .pet-value {
   font-size: 16px;
-  color: #d1aaff;
-  margin-bottom: 5px;
+  color: #ffd700;
+  margin-bottom: 6px;
 }
 
+/* Stats in lichtgrijs */
 .pet-stats {
-  font-size: 14px;
-  color: #aaa;
+  font-size: 15px;
+  color: #b3b3b3;
 }
