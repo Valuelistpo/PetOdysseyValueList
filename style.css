@@ -129,31 +129,12 @@ h1 {
   box-shadow: 0 0 20px #8b3cff55;
 }
 
-.link-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
+/* Link-kaarten hebben zelfde stijl als pet-cards */
 .link-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 100px;
-  background-color: #000;
-  border: 2px solid #5e2b88;
-  color: #bb86fc;
   text-decoration: none;
-  border-radius: 16px;
-  font-size: 18px;
+  text-align: center;
+  color: #bb86fc;
   font-weight: bold;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px #000;
-}
-
-.link-card:hover {
-  background-color: #1e102d;
-  box-shadow: 0 0 25px #8b3cff77;
+  font-size: 20px;
+  padding: 40px 0;
 }
