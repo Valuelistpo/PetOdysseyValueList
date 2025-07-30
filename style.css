@@ -190,3 +190,34 @@ body {
   }
 }
 
+.trader-list {
+  background-color: #0e0e0e;       /* donkere achtergrond */
+  border: 2px solid #5e2b88;       /* donkerpaarse rand */
+  border-radius: 16px;
+  padding: 20px 30px;
+  max-width: 400px;
+  margin: 40px auto;
+  color: #ccc;
+  box-shadow: 0 0 10px #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trader-list h2 {
+  color: #bb86fc;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.trader-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.trader-list li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  user-select: none;
+}
