@@ -56,3 +56,15 @@ body {
   font-size: 15px;
   color: #b3b3b3;
 }
+
+.pet-chance {
+  font-size: 14px;
+  color: #00ff88; /* frisgroen */
+  margin-bottom: 6px;
+}
+
+.pet-egg {
+  font-size: 14px;
+  color: #b4b4ff;
+  margin-bottom: 6px;
+}
