@@ -8,11 +8,9 @@ body {
 
 .value-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  justify-items: center;
 }
-
 
 /* Pet card styling */
 .pet-card {
@@ -33,12 +31,10 @@ body {
 
 .pet-img {
   width: 100%;
-  max-height: 100px;
-  object-fit: contain;
-  margin-bottom: 12px;
+  height: auto;
   border-radius: 10px;
+  margin-bottom: 12px;
 }
-
 
 /* Naam in kleur en vetgedrukt */
 .pet-name {
