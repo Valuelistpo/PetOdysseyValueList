@@ -38,10 +38,30 @@ body {
 
 /* Naam in kleur en vetgedrukt */
 .pet-name {
+  .pet-name {
   font-size: 18px;
   font-weight: bold;
-  color: #d16aff;
-  margin-bottom: 8px;
+  background: linear-gradient(270deg, #ffffff, #bb86fc, #ffffff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowText 4s ease infinite;
+  text-align: center;
+  margin: 8px 0;
+}
+
+@keyframes glowText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 }
 
 /* Waarde in goudkleur */
@@ -74,4 +94,58 @@ h1 {
   font-size: 48px;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #bb86fc;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.info-card {
+  background-color: #111;
+  border: 2px solid #5e2b88;
+  color: #ccc;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 40px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #000;
+}
+
+.info-card:hover {
+  background-color: #1b0e28;
+  box-shadow: 0 0 20px #8b3cff55;
+}
+
+.link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 100px;
+  background-color: #000;
+  border: 2px solid #5e2b88;
+  color: #bb86fc;
+  text-decoration: none;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #000;
+}
+
+.link-card:hover {
+  background-color: #1e102d;
+  box-shadow: 0 0 25px #8b3cff77;
 }
