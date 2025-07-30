@@ -68,3 +68,10 @@ body {
   color: #b4b4ff;
   margin-bottom: 6px;
 }
+
+h1 {
+  color: #7b2eff;
+  font-size: 48px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
