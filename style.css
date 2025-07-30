@@ -104,37 +104,89 @@ h1 {
   margin-top: 15px;
 }
 
+/* Algemene body en container */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* zwarte achtergrond */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titel */
 .main-title {
   font-size: 36px;
-  color: #bb86fc;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
   font-weight: bold;
+  color: #bb86fc;
+  margin-bottom: 20px;
+  text-align: center;
+  user-select: none;
 }
 
-.info-card {
-  background-color: #111;
-  border: 2px solid #5e2b88;
+/* About tekst */
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
   color: #ccc;
-  border-radius: 16px;
-  padding: 20px;
   margin-bottom: 40px;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px #000;
-}
-
-.info-card:hover {
-  background-color: #1b0e28;
-  box-shadow: 0 0 20px #8b3cff55;
-}
-
-/* Link-kaarten hebben zelfde stijl als pet-cards */
-.link-card {
-  text-decoration: none;
   text-align: center;
-  color: #bb86fc;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 40px 0;
+  max-width: 600px;
 }
+
+/* Link-knoppen container: kolom */
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* De link-buttons (nav-button) - stijl als pet-cards, maar smaller */
+.nav-button {
+  background-color: #0e0e0e; /* zwart */
+  border: 2px solid #5e2b88; /* donkerpaarse rand */
+  border-radius: 16px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #bb86fc;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px #000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+/* Hover effect met subtiele paarse glow en lichte achtergrond */
+.nav-button:hover {
+  background-color: #1b0e28;
+  box-shadow: 0 0 15px #8b3cffcc;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive: op kleine schermen toch netjes */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  .nav-button {
+    padding: 14px 20px;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .link-column {
+    max-width: 100%;
+  }
+}
+
