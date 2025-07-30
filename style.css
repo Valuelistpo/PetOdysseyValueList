@@ -23,7 +23,6 @@ body {
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 0 0 transparent;
-  width: 120px;
 }
 
 .pet-card:hover {
