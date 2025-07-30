@@ -38,19 +38,26 @@ body {
 
 /* Naam in kleur en vetgedrukt */
 .pet-name {
-  .pet-name {
   font-size: 18px;
   font-weight: bold;
-  background: linear-gradient(270deg, #ffffff, #bb86fc, #ffffff);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: glowText 4s ease infinite;
+  color: #bb86fc;
   text-align: center;
   margin: 8px 0;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
-@keyframes glowText {
+.pet-card:hover .pet-name {
+  background: linear-gradient(270deg, #ffffff, #bb86fc, #ffffff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shiny-glow 3s ease infinite;
+  font-weight: bold;
+}
+
+@keyframes shiny-glow {
   0% {
     background-position: 0% 50%;
   }
@@ -61,6 +68,7 @@ body {
     background-position: 0% 50%;
   }
 }
+
 
 }
 
