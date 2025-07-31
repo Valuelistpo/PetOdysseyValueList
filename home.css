@@ -1,48 +1,54 @@
-/* Basis */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
   background-color: #0d0d0d;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
-/* Container voor de 4 blokken */
-.home-container {
+/* Container voor 4 gelijke divs */
+.home-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  width: 90%;
-  height: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: calc(100vh - 80px);
 }
 
-/* Elk blok (quarter screen) */
-.home-section {
-  background-color: #111;
-  border: 2px solid #4b0082;
+/* Stijl per vakje — gebaseerd op pet-cards */
+.home-card {
+  background-color: #1a1a1a;
+  border: 2px solid #6a0dad;
   border-radius: 16px;
-  padding: 20px;
+  padding: 24px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 0 12px rgba(75, 0, 130, 0.4);
-  transition: all 0.3s ease;
-}
-
-/* Tekst styling */
-.home-section h2 {
-  margin: 0 0 10px;
+  box-shadow: 0 0 15px rgba(106, 13, 173, 0.25);
   color: #bb86fc;
-  font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
 }
 
-.home-section p {
-  font-size: 1rem;
-  color: #ccc;
+/* Zorg dat tekst niet uitrekt */
+.home-card p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive aanpassing voor kleinere schermen */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    height: auto;
+  }
+
+  .home-card {
+    height: 200px;
+  }
 }
