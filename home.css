@@ -43,11 +43,12 @@ body {
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   user-select: none;
   transition: none;
+  padding-top: 18px; 
 }
 
 /* Responsief voor mobiel */
