@@ -28,7 +28,10 @@ body {
   font-size: 1rem;
   line-height: 1.4;
   color: #e0e0e0;
+  margin-top: 10px;          /* Ruimte tussen titel en info */
+  white-space: normal;       /* Zorgt dat tekst automatisch afbreekt */
 }
+
 
 /* Stijl per vak – gebaseerd op pet-cards (zonder hover) */
 .home-card {
