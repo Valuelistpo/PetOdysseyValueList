@@ -45,3 +45,32 @@ body {
     height: 200px;
   }
 }
+
+.side-banner {
+  position: fixed;
+  top: 0;
+  width: 120px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  pointer-events: none; /* zodat ze geen klik-interactie blokkeren */
+}
+
+.side-banner img {
+  max-height: 90%;
+  width: auto;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.left-banner {
+  left: 0;
+  padding-left: 10px;
+}
+
+.right-banner {
+  right: 0;
+  padding-right: 10px;
+}
