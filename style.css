@@ -101,120 +101,60 @@ h1 {
   margin-top: 15px;
 }
 
-/* Algemene body en container */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #000; /* zwarte achtergrond */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ccc;
-}
-
-.container {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
+/* Modal achtergrond */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.3s ease;
+  justify-content: center;
   align-items: center;
 }
 
-/* Titel */
-.main-title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #bb86fc;
-  margin-bottom: 20px;
-  text-align: center;
-  user-select: none;
-}
-
-/* About tekst */
-.about-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ccc;
-  margin-bottom: 40px;
-  text-align: center;
-  max-width: 600px;
-}
-
-/* Link-knoppen container: kolom */
-.link-column {
+/* Inhoud van de modal */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 10px;
+  max-width: 50%;
+  max-height: 50%;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  animation: zoomIn 0.3s ease;
 }
 
-/* De link-buttons (nav-button) - stijl als pet-cards, maar smaller */
-.nav-button {
-  background-color: #0e0e0e; /* zwart */
-  border: 2px solid #5e2b88; /* donkerpaarse rand */
-  border-radius: 16px;
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #bb86fc;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 0 10px #000;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  user-select: none;
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #bb86fc;
 }
 
-/* Hover effect met subtiele paarse glow en lichte achtergrond */
-.nav-button:hover {
-  background-color: #1b0e28;
-  box-shadow: 0 0 15px #8b3cffcc;
-  color: #fff;
+/* Sluitknop */
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  font-size: 32px;
   cursor: pointer;
 }
 
-/* Responsive: op kleine schermen toch netjes */
-@media (max-width: 480px) {
-  .container {
-    padding: 0 12px;
-  }
-  .nav-button {
-    padding: 14px 20px;
-    font-size: 16px;
-    max-width: 100%;
-  }
-  .link-column {
-    max-width: 100%;
-  }
+/* Animaties */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.trader-list {
-  background-color: #0e0e0e;       /* donkere achtergrond */
-  border: 2px solid #5e2b88;       /* donkerpaarse rand */
-  border-radius: 16px;
-  padding: 20px 30px;
-  max-width: 400px;
-  margin: 40px auto;
-  color: #ccc;
-  box-shadow: 0 0 10px #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-.trader-list h2 {
-  color: #bb86fc;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-align: center;
-  user-select: none;
-}
-
-.trader-list ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 0;
-}
-
-.trader-list li {
-  margin-bottom: 8px;
-  font-size: 16px;
-  user-select: none;
-}
