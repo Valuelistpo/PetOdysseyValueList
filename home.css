@@ -6,41 +6,36 @@ body {
   color: white;
 }
 
-/* Container voor 4 gelijke divs */
+/* Grid met 4 vakken */
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1000px;
+  gap: 24px;
+  max-width: 1200px;
   margin: 0 auto;
   height: calc(100vh - 80px);
 }
 
-/* Stijl per vakje — gebaseerd op pet-cards */
+/* Stijl per vak – gebaseerd op pet-cards (zonder hover) */
 .home-card {
-  background-color: #1a1a1a;
-  border: 2px solid #6a0dad;
-  border-radius: 16px;
+  background-color: #111;
+  border: 2px solid #3b0066;
+  border-radius: 14px;
   padding: 24px;
+  text-align: center;
+  color: #bb86fc;
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(106, 13, 173, 0.25);
-  color: #bb86fc;
-  font-weight: bold;
-  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   user-select: none;
+  transition: none;
 }
 
-/* Zorg dat tekst niet uitrekt */
-.home-card p {
-  margin: 0;
-  line-height: 1.4;
-}
-
-/* Responsive aanpassing voor kleinere schermen */
+/* Responsief voor mobiel */
 @media (max-width: 768px) {
   .home-grid {
     grid-template-columns: 1fr;
