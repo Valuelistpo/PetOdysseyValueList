@@ -92,3 +92,30 @@ body {
   right: 0;
   padding-right: 10px;
 }
+
+.animated-button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(45deg, #7b5cff, #c59cff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(197, 156, 255, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.animated-button:hover {
+  background: linear-gradient(45deg, #c59cff, #7b5cff);
+  box-shadow: 0 6px 20px rgba(197, 156, 255, 0.9);
+  transform: translateY(-3px);
+}
+
+.animated-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 10px rgba(197, 156, 255, 0.7);
+}
