@@ -72,6 +72,32 @@ h1 {
   }
 }
 
+/* Naam van de pet (exclusive pet) */
+.pet-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #ffc72e; /* goud */
+  background: linear-gradient(270deg, #ffc72e, #ffffff, #ffc72e);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shiny-glow 3s ease infinite;
+}
+
+/* Naam van de pet (stat pets) */
+.pet-name-stat {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #3e94fe; /* Blauw */
+  background: linear-gradient(270deg, #3e94fe, #ffffff, #3e94fe);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shiny-glow 3s ease infinite;
+}
+
 
 
 /* Kleine info onder naam */
