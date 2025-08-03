@@ -49,6 +49,11 @@ body {
   user-select: none;
   transition: none;
   padding-top: 18px; 
+  overflow-wrap: break-word;   /* Breek lange woorden */
+  word-wrap: break-word;       /* Voor oudere browsers */
+  word-break: break-word;
+  box-sizing: border-box;      /* Inclusief padding in breedte */
+  max-width: 100%;             /* Voorkomt dat de kaart zelf uitrekt */
 }
 
 /* Responsief voor mobiel */
@@ -69,7 +74,7 @@ body {
   top: 0;
   width: 10%;
   height: 100vh;
-  z-index: 999;
+  z-index: -1;
   pointer-events: none;
   overflow: hidden;
 }
